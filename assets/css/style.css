@@ -112,6 +112,15 @@ textarea::-webkit-scrollbar{
   height: 40vh;
 }
 
+.slider span{
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 93%;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+}
+
 .slider img{
   display: block;
   margin-left: 36%;
