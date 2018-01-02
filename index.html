@@ -5,109 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bienvenidos - Red Social</title>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- jquery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-  <!-- Modal Inicio de sesión -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Sign up</h4>
-      <form>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="email" type="email" class="validate" required>
-            <label for="email">Email</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="password" type="password" class="validate" minlength="6" required>
-            <label for="password">Password</label>
-          </div>
-        </div>
-        <div class="row">
-          <button id="btn-register" class="btn waves-effect waves-light" type="submit" name="action">Submit
-          </button>
-        </div>
-        <div class="row">
-          <p>
-            <a href="#">¿Olvidaste tu contraseña?</a>
-          </p>
-        </div>
-      </form>
-    </div>
-  </div>
-  <!-- fin modal -->
-
   <header>
-    <nav>
-      <div class="container nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-      </div>
-    </nav>
-  </header>
-  <main>
-  <div class="container row">
-    <div class="col m6">
-      asd
-    </div>
-    <div class="col s12 col m6">
-      <form>
-        <h2>Crea una cuenta</h2>
-        <div class="row">
-          <div class="input-field col s6">
-            <input id="first_name" type="text" class="validate">
-            <label for="first_name">First Name</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Last Name</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s6">
-            <div class="gender-male col s6">
-              <input class="with-gap" name="gender" type="radio" id="male" required />
-              <label for="male">Male</label>
-            </div>
-            <div class="gender-female col s6">
-              <input class="with-gap" name="gender" type="radio" id="female" required />
-              <label for="female">Female</label>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="password" type="password" class="validate">
-            <label for="password">Password</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="email" type="email" class="validate">
-            <label for="email">Email</label>
-          </div>
-        </div>
-        <div class="row">
-            <button id="btn-register" class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <nav class="navbar navbar-default">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+              aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand" href="#">Brand</a>
+          </div>
+        
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+           
+            <form class="navbar-form navbar-right">
+              <div class="form-group">
+                <input type="mail" class="form-control" placeholder="correo electrónico">
+                <input type="password" class="form-control" placeholder="contraseña">
+                <input class="btn btn-default" type="submit" value="Entrar">
+              </div>
+            </form>
+          </div>
+          <!-- /.navbar-collapse -->
         </div>
-        <div class="row">
-          <p>Si ya tienes una cuenta <span><a class="waves-effect waves-light modal-trigger" href="#modal1">Sign up</a></span></p>
-        </div>
-      </form>
-    </div>
-  </div>
-  </main>
+        <!-- /.container-fluid -->
+      </nav>
+  </header>
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- inicio contenido de la pagina -->
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          asd
+        </div>
+        <div class="registro col-md-6">
+          <h2>Crea tu cuenta</h2>
+          <form>
+            <label>Nombre</label>
+            <input type="text" name="name" class="form-control">
+            <label>Apellido</label>
+            <input type="text" name="lastname" class="form-control">
+            <label>Correo electrónico</label>
+            <input type="email" name="email" class="form-control">
+            <label>Password</label>
+            <input type="password" name="password" class="form-control">
+            <label>
+              <input type="checkbox" name="terms"> I agree with the
+              <a href="#">Terms and Conditions</a>.</label>
+            <input type="submit" value="Sign up" class="btn btn-primary col-md-12">
+            <div class="clearfix"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- fin contenido de la pagina -->
+
+  <footer>
+
+  </footer>
+
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
