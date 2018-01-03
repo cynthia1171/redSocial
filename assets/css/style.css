@@ -135,7 +135,7 @@
 .portada{
   outline: 1px solid #000;
   height: 40vh;
-  background-image: url(../images/portada.jpg);
+  background-image: url(../images/fondo.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -145,7 +145,6 @@
 }
 
 .img-portada img{
-  border: 2px solid #000;
   width: 150px;
   height: 150px;
   margin-top: 14vh;

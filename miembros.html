@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mi perfil</title>
+  <title>Mienbros</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
@@ -16,6 +16,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
+  <!-- inicio del header -->
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -45,13 +46,13 @@
             <li role="presentation">
               <a href="noticias.html">Noticias</a>
             </li>
-            <li role="presentation">
+            <li role="presentation"  class="active">
               <a href="miembros.html">Miembros</a>
             </li>
             <li role="presentation">
               <a href="grupos.html">Grupos</a>
             </li>
-            <li class="dropdown active">
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nombre
                 <span class="caret"></span>
               </a>
@@ -85,120 +86,118 @@
   </header>
   <!-- fin del header -->
 
-
-  <!-- inicio de la seccion con contenido -->
+  <!-- inicio del contenido -->
   <section class="orden">
-    <div class="container main">
+    <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <div class="myPost">
-            <div class="row">
-              <div class="portada">
-                <div class="img-portada">
-                  <div class="col-md-4">
-                    <img src="assets/images/user.png" alt="" class="img-responsive">
-                  </div>
-                  <div class="col-md-8">
-                    <h2>Nombre</h2>
-                  </div>
+          <div class="members">
+            <h1 class="page-header">Miembros</h1>
+            <div class="row member-row">
+              <div class="col-md-3">
+                <img src="assets/images/user.png" class="img-thumbnail" alt="">
+                <div class="text-center">
+                  Nombre usuario
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="info">
-                <div class="col-md-5">
-                  <div class="intereses">
-                    <h3>Intereses</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur totam et autem omnis tempore quae quia odio,
-                      neque id, optio unde illum nemo, temporibus a vel aspernatur expedita ullam soluta.</p>
-                  </div>
-                </div>
-                <div class="col-md-7">
-                  <div class="row">
-                    <div class="follow">
-                      <div class="col-md-4">
-                        <p>0</p>
-                        <p>SEGUIDORES</p>
-                      </div>
-                      <div class="col-md-4">
-                        <p>0</p>
-                        <p>PUBLICACIONES</p>
-                      </div>
-                      <div class="col-md-4">
-                        <p>0</p>
-                        <p>LIKE</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="col-md-3">
+                <p>
+                  <a href="#" class="btn btn-success btn-block">
+                    <i class="fa fa-users"></i> Añadir amigo</a>
+                </p>
+              </div>
+              <div class="col-md-3">
+                <p>
+                  <a href="#" class="btn btn-default btn-block">
+                    <i class="fa fa-envelope"></i> Enviar mensaje</a>
+                </p>
+              </div>
+              <div class="col-md-3">
+                <p>
+                  <a href="#" class="btn btn-primary btn-block">
+                    <i class="fa fa-edit"></i> Ver perfil</a>
+                </p>
               </div>
             </div>
-            <div class="row">
-              <div class="publicaciones">
-                <!-- inicio mis publicaciones -->
-                <div class="panel panel-default post">
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-sm-2">
-                        <a href="perfil.html" class="post-avatar thumbnail">
-                          <img src="assets/images/user.png" alt="">
-                          <div class="text-center">Nombre usuario</div>
-                        </a>
-                        <div class="likes text-center">
-                          <span class="glyphicon glyphicon-heart">7 Likes</span>
-                        </div>
-                      </div>
-                      <div class="col-sm-10">
-                        <div class="bubble">
-                          <div class="pointer">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum unde, doloribus temporibus recusandae ratione,
-                              maxime aliquam, aliquid facilis atque aut praesentium ducimus perferendis ipsam voluptatibus optio libero.
-                              Cum, tempora recusandae?</p>
-                          </div>
-                          <div class="pointer-border"></div>
-                        </div>
-                        <p class="post-action">
-                          <a href="#">Like</a> -
-                          <a href="#">Compartir</a>
-                        </p>
-                        <div class="comment-form">
-                          <form class="form-inline">
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Escribe tu comentario">
-                            </div>
-                            <button type="submit" class="btn btn-default">
-                              <span class="glyphicon glyphicon-ok"></span>
-                            </button>
-                          </form>
-                        </div>
-                        <div class="clearfix"></div>
-                
-                        <div class="comments">
-                          <div class="comment">
-                            <a href="#" class="comment-avatar pull-left">
-                              <img src="assets/images/user.png" alt="">
-                            </a>
-                            <div class="comment-text">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque libero recusandae voluptate ab facere
-                                repellat sed cum nostrum architecto a in, eum laboriosam officiis assumenda fuga? Itaque, atque consequatur?</p>
-                            </div>
-                          </div>
-                          <div class="comment">
-                            <a href="#" class="comment-avatar pull-left">
-                              <img src="assets/images/user.png" alt="">
-                            </a>
-                            <div class="comment-text">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque libero recusandae voluptate ab facere
-                                repellat sed cum nostrum architecto a in, eum laboriosam officiis assumenda fuga? Itaque, atque consequatur?</p>
-                            </div>
-                          </div>
-                          <div class="clearfix"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <hr>
+            <div class="row member-row">
+              <div class="col-md-3">
+                <img src="assets/images/user.png" class="img-thumbnail" alt="">
+                <div class="text-center">
+                   Nombre usuario
                 </div>
-                <!-- fin mis ´publicaciones -->
+              </div>
+              <div class="col-md-3">
+                <p>
+                  <a href="#" class="btn btn-success btn-block">
+                    <i class="fa fa-users"></i> Añadir amigo</a>
+                </p>
+              </div>
+              <div class="col-md-3">
+                <p>
+                  <a href="#" class="btn btn-default btn-block">
+                    <i class="fa fa-envelope"></i> Enviar mensaje</a>
+                </p>
+              </div>
+              <div class="col-md-3">
+                <p>
+                  <a href="#" class="btn btn-primary btn-block">
+                    <i class="fa fa-edit"></i> Ver perfil</a>
+                </p>
+              </div>
+            </div>
+            <hr>
+            <div class="row member-row">
+              <div class="col-md-3">
+                <img src="assets/images/user.png" class="img-thumbnail" alt="">
+                <div class="text-center">
+                  Nombre usuario
+                </div>
+              </div>
+              <div class="col-md-3">
+                <p>
+                  <a href="#" class="btn btn-success btn-block">
+                    <i class="fa fa-users"></i> Añadir amigo</a>
+                </p>
+              </div>
+              <div class="col-md-3">
+                <p>
+                  <a href="#" class="btn btn-default btn-block">
+                    <i class="fa fa-envelope"></i> Enviar mensaje</a>
+                </p>
+              </div>
+              <div class="col-md-3">
+                <p>
+                  <a href="#" class="btn btn-primary btn-block">
+                    <i class="fa fa-edit"></i> Ver perfil</a>
+                </p>
+              </div>
+            </div>
+            <hr>
+            <div class="row member-row">
+              <div class="col-md-3">
+                <img src="assets/images/user.png" class="img-thumbnail" alt="">
+                <div class="text-center">
+                  Nombre usuario
+                </div>
+              </div>
+              <div class="col-md-3">
+                <p>
+                  <a href="#" class="btn btn-success btn-block">
+                    <i class="fa fa-users"></i> Añadir usuario</a>
+                </p>
+              </div>
+              <div class="col-md-3">
+                <p>
+                  <a href="#" class="btn btn-default btn-block">
+                    <i class="fa fa-envelope"></i> Enviar mensaje</a>
+                </p>
+              </div>
+              <div class="col-md-3">
+                <p>
+                  <a href="#" class="btn btn-primary btn-block">
+                    <i class="fa fa-edit"></i> Ver perfil</a>
+                </p>
               </div>
             </div>
           </div>
@@ -293,14 +292,11 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-      <!-- fin seccion de contenido -->
+        </div>
+        </div>
+        </section>
+        <!-- fin seccion de contenido -->
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-  <script src="assets/js/app.js"></script>
+  
 </body>
 </html>
