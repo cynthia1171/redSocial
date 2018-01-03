@@ -42,6 +42,15 @@
         <!-- fin buscador -->
         <div class="barra-nav pull-right">
           <ul class="nav nav-pills">
+            <li role="presentation" class="active">
+              <a href="noticias.html">Noticias</a>
+            </li>
+            <li role="presentation">
+              <a href="miembros.html">Miembros</a>
+            </li>
+            <li role="presentation">
+              <a href="grupos.html">Grupos</a>
+            </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nombre
                 <span class="caret"></span>
@@ -52,6 +61,9 @@
                 </li>
                 <li>
                   <a href="mensajes.html">Mensajes</a>
+                </li>
+                <li>
+                  <a href="#">Fotos</a>
                 </li>
                 <li>
                   <a href="#">Solicitudes de amistad</a>
@@ -65,15 +77,6 @@
                 </li>
               </ul>
             </li>
-            <li role="presentation" class="active">
-              <a href="noticias.html">Noticias</a>
-            </li>
-            <li role="presentation">
-              <a href="stream.html">Stream</a>
-            </li>
-            <li role="presentation">
-              <a href="mensajes.html">Mensajes</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -81,62 +84,254 @@
     </nav>
   </header>
 
-  <main>
+  <!-- inicio seccion noticias -->
+  <section class="orden">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-offset-md-1">
-          <div class="row">
-            <h3>Noticias</h3>
+        <div class="col-md-8">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Noticias</h3>
+            </div>
+            <div class="panel-body">
+              <form action="">
+                <div class="form-group">
+                  <textarea class="form-control" name="" id="" placeholder="¿Qué estas pensando?" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Postear</button>
+                <div class="fileupload fileupload-new pull-right" data-provides="fileupload">
+                  <span class="btn btn-primary btn-file">
+                    <span class="fileupload-new glyphicon glyphicon-camera"></span>
+                    <span class="fileupload-exists glyphicon glyphicon-camera"></span>
+                    <input type="file" />
+                  </span>
+                  <span class="fileupload-preview"></span>
+                  <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="row news">
-            <div class="release">
-              <div class="row margin">
-                <textarea class="form-control txt-release" rows="2"></textarea>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="fileupload fileupload-new" data-provides="fileupload">
-                      <span class="btn btn-primary btn-file">
-                        <span class="fileupload-new glyphicon glyphicon-camera"></span>
-                        <span class="fileupload-exists glyphicon glyphicon-camera"></span>
-                        <input type="file" />
-                      </span>
-                      <span class="fileupload-preview"></span>
-                      <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-                    </div>
+          <div class="panel panel-default post">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-2">
+                  <a href="perfil.html" class="post-avatar thumbnail">
+                    <img src="assets/images/user.png" alt="">
+                    <div class="text-center">Nombre usuario</div>
+                  </a>
+                  <div class="likes text-center">
+                    <span class="glyphicon glyphicon-heart">7 Likes</span>
                   </div>
-                  <div class="col-md-6">
-                    <button type="submit" class="btn btn-primary pull-right publicar">
-                      Publicar
-                    </button>
+                </div>
+                <div class="col-sm-10">
+                  <div class="bubble">
+                    <div class="pointer">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum unde, doloribus temporibus recusandae ratione, maxime
+                        aliquam, aliquid facilis atque aut praesentium ducimus perferendis ipsam voluptatibus optio libero. Cum, tempora recusandae?</p>
+                    </div>
+                    <div class="pointer-border"></div>
+                  </div>
+                  <p class="post-action">
+                    <a href="#">Like</a> - <a href="#">Compartir</a>
+                  </p>
+                  <div class="comment-form">
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Escribe tu comentario">
+                      </div>
+                      <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span></button>
+                    </form>
+                  </div>
+                  <div class="clearfix"></div>
+
+                  <div class="comments">
+                    <div class="comment">
+                      <a href="#" class="comment-avatar pull-left">
+                        <img src="assets/images/user.png" alt="">
+                      </a>
+                      <div class="comment-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque libero recusandae voluptate ab facere repellat sed cum nostrum architecto a in, eum laboriosam officiis assumenda fuga? Itaque, atque consequatur?</p>
+                      </div>
+                    </div>
+                    <div class="comment">
+                      <a href="#" class="comment-avatar pull-left">
+                        <img src="assets/images/user.png" alt="">
+                      </a>
+                      <div class="comment-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque libero recusandae voluptate ab facere repellat
+                          sed cum nostrum architecto a in, eum laboriosam officiis assumenda fuga? Itaque, atque consequatur?</p>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="post">
+          </div>
+          <div class="panel panel-default post">
+            <div class="panel-body">
               <div class="row">
-                <div class="col-md-3">
-                  <img src="assets/images/user-release.jpg" alt="" class="img-responsive img-user img-circle block-center">
+                <div class="col-sm-2">
+                  <a href="perfil.html" class="post-avatar thumbnail">
+                    <img src="assets/images/user.png" alt="">
+                    <div class="text-center">Nombre usuario</div>
+                  </a>
+                  <div class="likes text-center">
+                    <span class="glyphicon glyphicon-heart">7 Likes</span>
+                  </div>
                 </div>
-                <div class="txt-post col-md-8">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores eveniet voluptate voluptatem quibusdam cupiditate
-                    aut, maxime voluptatum qui quas officiis explicabo quaerat quia quisquam facere iure! Nobis odio quis consequuntur?</p>
-                </div>
-                <div class="ilike">
-                  <label>
-                    <input type="checkbox"> Check me out
-                  </label>
+                <div class="col-sm-10">
+                  <div class="bubble">
+                    <div class="pointer">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum unde, doloribus temporibus recusandae ratione,
+                        maxime aliquam, aliquid facilis atque aut praesentium ducimus perferendis ipsam voluptatibus optio libero.
+                        Cum, tempora recusandae?</p>
+                    </div>
+                    <div class="pointer-border"></div>
+                  </div>
+                  <p class="post-action">
+                    <a href="#">Like</a> -
+                    <a href="#">Compartir</a>
+                  </p>
+                  <div class="comment-form">
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Escribe tu comentario">
+                      </div>
+                      <button type="submit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-ok"></span>
+                      </button>
+                    </form>
+                  </div>
+                  <div class="clearfix"></div>
+          
+                  <div class="comments">
+                    <div class="comment">
+                      <a href="#" class="comment-avatar pull-left">
+                        <img src="assets/images/user.png" alt="">
+                      </a>
+                      <div class="comment-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque libero recusandae voluptate ab facere
+                          repellat sed cum nostrum architecto a in, eum laboriosam officiis assumenda fuga? Itaque, atque consequatur?</p>
+                      </div>
+                    </div>
+                    <div class="comment">
+                      <a href="#" class="comment-avatar pull-left">
+                        <img src="assets/images/user.png" alt="">
+                      </a>
+                      <div class="comment-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque libero recusandae voluptate ab facere
+                          repellat sed cum nostrum architecto a in, eum laboriosam officiis assumenda fuga? Itaque, atque consequatur?</p>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3 pull-right aside">
-          <h3>Sugerencias</h3>
-          
+        <div class="col-md-4">
+          <div class="panel panel-default friends">
+            <div class="panel-heading">
+              <h3 class="panel-title">Mis amigos</h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+                <li>
+                  <a href="profile.html" class="thumbnail">
+                    <img src="assets/images/user.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="profile.html" class="thumbnail">
+                    <img src="assets/images/user.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="profile.html" class="thumbnail">
+                    <img src="assets/images/user.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="profile.html" class="thumbnail">
+                    <img src="assets/images/user.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="profile.html" class="thumbnail">
+                    <img src="assets/images/user.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="profile.html" class="thumbnail">
+                    <img src="assets/images/user.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="profile.html" class="thumbnail">
+                    <img src="assets/images/user.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="profile.html" class="thumbnail">
+                    <img src="assets/images/user.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="profile.html" class="thumbnail">
+                    <img src="assets/images/user.png" alt="">
+                  </a>
+                </li>
+              </ul>
+              <div class="clearfix"></div>
+              <a class="btn btn-primary" href="#">Todos mis amigos</a>
+            </div>
+          </div>
+          <div class="panel panel-default groups">
+            <div class="panel-heading">
+              <h3 class="panel-title">Sugerencia de grupos</h3>
+            </div>
+            <div class="panel-body">
+              <div class="group-item">
+                <img src="img/group.png" alt="">
+                <h4>
+                  <a href="#" class="">Grupo</a>
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugiat sint mollitia?</p>
+              </div>
+              <div class="clearfix"></div>
+              <div class="group-item">
+                <img src="img/group.png" alt="">
+                <h4>
+                  <a href="#" class="">Grupo</a>
+                </h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tenetur voluptas mollitia.</p>
+              </div>
+              <div class="clearfix"></div>
+              <div class="group-item">
+                <img src="img/group.png" alt="">
+                <h4>
+                  <a href="#" class="">Grupo</a>
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti id debitis est?</p>
+              </div>
+              <div class="clearfix"></div>
+              <a href="#" class="btn btn-primary">Todos los grupos</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </main>
+  </section>
+  <!-- fin seccion de contenido -->
+
+  <!-- inicio del footer -->
+  <footer>
+    <div class="container">
+      <p>Laboratoria Copyright &copy, 2018</p>
+    </div>
+  </footer>
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"

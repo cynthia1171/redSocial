@@ -28,79 +28,101 @@
 }
 /********************************************************************************************************/
 
-/* estilos noticias.html */
-
-/* estilos de la etiqueta main */
-.main{
-  margin-top: 4%;
+/* estilos página noticias.html */
+.orden{
+  margin-top: 12vh;
 }
 
-/* estilos del div news */
-.news{
-	height: 82vh;
-	padding: 20px;
+.panel-heading{
+  background-color: #b94a48;
+}
+
+.bubble{
+	position: relative;
+	width: 580px;
+	min-height: 65px;
+	padding: 15px;
 	background: #fff;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+
+.bubble:after{
+	content:'';
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 15px 15px 0;
+	border-color: transparent #fff;
+	display: block;
+	width: 0;
+	z-index: 1;
+	margin-top: -15px;
+	left:-15px;
+	top: 50%;
+}
+
+.bubble:before{
+	content:'';
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 15px 15px 0;
+	border-color: transparent #ccc;
+	display: block;
+	width: 0;
+	z-index: 0;
+	margin-top: -15px;
+	left:-16px;
+	top: 50%;
+}
+
+.post-actions{
+	margin:5px;
+}
+
+.comment-form .form-group{
+	width: 90%;
+}
+
+.comment{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 3px;
+	margin: 5px 0;
 	overflow: auto;
-	font-family: 'Open Sans';
-	border-radius: 4px;
-}
-/* estilo para desaparecer el scroll */
-.news::-webkit-scrollbar{
- width: 2px;
+	width:100%;
 }
 
-.img-user{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.comment-form input[type="text"]{
+	width: 100%;
 }
 
-.post{
-  border: 1px solid #000;
-  border-radius: 4px;
-  margin-top: 2%;
-}
-/************************************************************************/
-
-/* estilos del div aside */
-.aside{
-  outline: 1px solid #000;
-  height: 90vh;
+.comment-avatar img{
+	width: 40px;
+	margin-right: 5px;
 }
 
-.aside h5{
-  text-align: center;
+.friends li{
+	list-style: none;
+	padding:0 5px;
+	display:inline;
+	float:left;
 }
 
-.user-aside{
-  display: block;
-  margin: 4% auto;
+.friends img{
+	width: 55px;
 }
 
-.release{
-  border: 1px solid rgb(185, 181, 181);
-  border-radius: 4px;
+.groups img{
+	width:80px;
+	float:left;
+	margin-right: 15px;
 }
 
-.margin{
-  margin-top: 3%;
-}
-
-/*este estilo es para que desaparezca el scroll del textarea*/
-textarea::-webkit-scrollbar{
-  width: 1px;
-}
-
-.publicar{
-  width: 80%;
-  margin-right: 10%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-
-.txt-release{
-  width: 80%;
-  margin-left: 10%;
+.group-item{
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	overflow: auto;
 }
 
 /****************************************************************************/
