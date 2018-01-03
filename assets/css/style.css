@@ -28,14 +28,16 @@
 }
 /********************************************************************************************************/
 
+/* estilos noticias.html */
+
 /* estilos de la etiqueta main */
-main{
+.main{
   margin-top: 4%;
 }
 
 /* estilos del div news */
 .news{
-	height: 80vh;
+	height: 82vh;
 	padding: 20px;
 	background: #fff;
 	overflow: auto;
@@ -63,7 +65,7 @@ main{
 /* estilos del div aside */
 .aside{
   outline: 1px solid #000;
-  height: 81vh;
+  height: 90vh;
 }
 
 .aside h5{
@@ -103,44 +105,75 @@ textarea::-webkit-scrollbar{
 
 /****************************************************************************/
 
-/* estilos del div slider */
-.slider{
-  width: 100%;
-  background-image: url(../images/fondo.jpg);
+/* estilos perfil.html */
+.conternido:-webkit-scrollbar{
+  width: 1px;
+}
+
+.portada{
+  outline: 1px solid #000;
+  height: 40vh;
+  background-image: url(../images/portada.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 40vh;
 }
 
-.slider span{
-  position: absolute;
-  margin-top: 7%;
-  margin-left: 93%;
-  font-size: 2em;
+.img-portada{
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.img-portada img{
+  border: 2px solid #000;
+  width: 150px;
+  height: 150px;
+  margin-top: 14vh;
+  margin-left: 2vh;
+}
+
+.img-portada h2{
+  margin-top: 33vh;
+  margin-left: -12vh;
   color: #fff;
-  cursor: pointer;
+  font-weight: bold;
 }
-
-.slider img{
-  display: block;
-  margin-left: 36%;
-  margin-top: 10%;
-  position: absolute;
-}
-
-.portada h3{
-  text-align: center;
-  margin-right: 7%;
-  margin-top: 9%;
-}
-
-/*******************************************************************************/
-
-/* estilos seguidores */
 
 .follow{
-  margin-top: 5%;
+  /*outline: 1px solid #000;*/
+  height: 10vh;
+  margin-top: 11vh;
   text-align: center;
 }
 
-/*******************************************************************************/
+.myPost{
+  height: 90vh;
+  overflow: auto;
+}
+
+.myPost::-webkit-scrollbar{
+  width: 1px;
+}
+
+.mis-publi{
+  background-color: azure;
+  width: 80%;
+  margin-top: 10px;
+  margin-left: auto;
+  border-radius: 4px;
+  margin-right: auto;
+  height: 18vh;
+}
+
+.mis-publi img{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mis-publi .row{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.like{
+  margin-left: 20px;
+}
+

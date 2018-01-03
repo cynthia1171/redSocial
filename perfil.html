@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mi perfil</title>
+  <title>Document</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
@@ -16,30 +16,6 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-  <!-- modal para editar imagenes de portada y de perfil -->
-  <div class="modal fade" tabindex="-1" role="dialog" id="modal-edit">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h4 class="modal-title">Modal title</h4>
-        </div>
-        <div class="modal-body">
-          <p>One fine body&hellip;</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-      <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-  </div>
-  <!-- /.modal -->
-  <!-- fin del modal -->
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -66,11 +42,34 @@
         <!-- fin buscador -->
         <div class="barra-nav pull-right">
           <ul class="nav nav-pills">
-            <li role="presentation">
-              <a href="#">Inicio</a>
+            <li class="dropdown active" role="presentation">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nombre
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="perfil.html">Mi perfil</a>
+                </li>
+                <li>
+                  <a href="#">Mensajes</a>
+                </li>
+                <li>
+                  <a href="#">Solicitudes de amistad</a>
+                </li>
+                <li>
+                  <a href="#">Notificaciones</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#">Cerrar sesión</a>
+                </li>
+              </ul>
             </li>
-            <li role="presentation"  class="active">
-              <a href="#">Perfil</a>
+            <li role="presentation">
+              <a href="#">Noticias</a>
+            </li>
+            <li role="presentation">
+              <a href="#">Stream</a>
             </li>
             <li role="presentation">
               <a href="#">Mensajes</a>
@@ -81,41 +80,86 @@
       <!-- /.container-fluid -->
     </nav>
   </header>
+  <!-- fin del header -->
 
-  <!-- contenido del slider -->
-  <div class="container-fluid">
-    <div class="row portada">
-      <div class="slider">
-        <span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#modal-edit" aria-hidden="true"></span>
-        <img src="assets/images/emoji.jpg" alt="" class="img-responsive img-circle">
-      </div>
-        <h3>Nombre de la persona</h3>
-    </div>
-  </div>
-  <!-- fin del slider -->
-  
-  <!-- contenido de seguidores -->
-  <div class="container follow">
+
+  <div class="container main">
     <div class="row">
-      <div class="col-md-3">
-        <p>0</p>
-        <p>SEGUIDORES</p>
+      <div class="col-md-8 col-offset-md-1">
+        <div class="myPost">
+          <div class="row">
+            <div class="portada">
+              <div class="img-portada">
+                <div class="col-md-4">
+                  <img src="assets/images/user.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-8">
+                  <h2>Nombre</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="info">
+              <div class="col-md-5">
+                <div class="intereses">
+                  <h3>Intereses</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur totam et autem omnis tempore quae quia odio,
+                    neque id, optio unde illum nemo, temporibus a vel aspernatur expedita ullam soluta.</p>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="row">
+                  <div class="follow">
+                    <div class="col-md-4">
+                      <p>0</p>
+                      <p>SEGUIDORES</p>
+                    </div>
+                    <div class="col-md-4">
+                      <p>0</p>
+                      <p>PUBLICACIONES</p>
+                    </div>
+                    <div class="col-md-4">
+                      <p>0</p>
+                      <p>LIKE</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="publicaciones">
+              <!-- inicio mis publicaciones -->
+              <div class="mis-publi">
+                <div class="row">
+                  <div class="col-md-2">
+                    <img src="assets/images/user-release.jpg" alt="" class="img-responsive img-circle">
+                  </div>
+                  <div class="col-md-10">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero animi vel deleniti rerum fuga, eos eum. Cupiditate pariatur nesciunt quos fuga non laborum dignissimos! Temporibus, quo. Nobis et iusto ex.
+                    </p>
+                  </div>
+                  <div class="like col-md-2">
+                    <p><span class="glyphicon glyphicon-thumbs-up"></span> Me gusta</p>
+                  </div>
+                  <div class="dislike col-md-3">
+                    <p>
+                      <span class="glyphicon glyphicon-thumbs-down"></span> No me gusta</p>
+                  </div>
+                </div>
+              </div>
+              <!-- fin mis ´publicaciones -->
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <p>0</p>
-        <p>SEGUIDOS</p>
-      </div>
-      <div class="col-md-3">
-        <p>0</p>
-        <p>GRUPOS</p>
-      </div>
-      <div class="col-md-3">
-        <p>0</p>
-        <p>PUBLICACIONES</p>
+      <div class="col-md-3 pull-right aside">
+        <h3>Sugerencias</h3>
       </div>
     </div>
-  </div>
-  <!-- fin contenido seguidores -->
+  </div>  
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
