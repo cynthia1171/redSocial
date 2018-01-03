@@ -177,3 +177,33 @@ textarea::-webkit-scrollbar{
   margin-left: 20px;
 }
 
+/******************************************************************************/
+
+/* estilos mensajes.html */
+
+.bajar{
+  margin-top: 23px;
+}
+
+.mensajes{
+  margin-top: 10vh;
+}
+
+.users-msj{
+  height: 65vh;
+  overflow: auto;
+}
+
+.users-msj::-webkit-scrollbar{
+  width: 1px;
+}
+
+.hist-msj{
+  outline: 1px solid #000;
+  height: 65vh;
+}
+
+.env-mensaje{
+  outline: 1px solid #000;
+  height: 20vh;
+}

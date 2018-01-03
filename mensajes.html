@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mi perfil</title>
+  <title>Bandeja de entrada</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
@@ -42,7 +42,7 @@
         <!-- fin buscador -->
         <div class="barra-nav pull-right">
           <ul class="nav nav-pills">
-            <li class="dropdown active" role="presentation">
+            <li class="dropdown" role="presentation">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nombre
                 <span class="caret"></span>
               </a>
@@ -71,7 +71,7 @@
             <li role="presentation">
               <a href="stream.html">Stream</a>
             </li>
-            <li role="presentation">
+            <li role="presentation" class="active">
               <a href="mensajes.html">Mensajes</a>
             </li>
           </ul>
@@ -83,84 +83,47 @@
   <!-- fin del header -->
 
 
-  <div class="container main">
+  <div class="container mensajes">
     <div class="row">
-      <div class="col-md-8 col-offset-md-1">
-        <div class="myPost">
-          <div class="row">
-            <div class="portada">
-              <div class="img-portada">
-                <div class="col-md-4">
-                  <img src="assets/images/user.jpg" alt="" class="img-responsive">
-                </div>
-                <div class="col-md-8">
-                  <h2>Nombre</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="info">
-              <div class="col-md-5">
-                <div class="intereses">
-                  <h3>Intereses</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur totam et autem omnis tempore quae quia odio,
-                    neque id, optio unde illum nemo, temporibus a vel aspernatur expedita ullam soluta.</p>
-                </div>
-              </div>
-              <div class="col-md-7">
-                <div class="row">
-                  <div class="follow">
-                    <div class="col-md-4">
-                      <p>0</p>
-                      <p>SEGUIDORES</p>
-                    </div>
-                    <div class="col-md-4">
-                      <p>0</p>
-                      <p>PUBLICACIONES</p>
-                    </div>
-                    <div class="col-md-4">
-                      <p>0</p>
-                      <p>LIKE</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="publicaciones">
-              <!-- inicio mis publicaciones -->
-              <div class="mis-publi">
-                <div class="row">
-                  <div class="col-md-2">
-                    <img src="assets/images/user-release.jpg" alt="" class="img-responsive img-circle">
-                  </div>
-                  <div class="col-md-10">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero animi vel deleniti rerum fuga, eos eum. Cupiditate pariatur nesciunt quos fuga non laborum dignissimos! Temporibus, quo. Nobis et iusto ex.
-                    </p>
-                  </div>
-                  <div class="like col-md-2">
-                    <p><span class="glyphicon glyphicon-thumbs-up"></span> Me gusta</p>
-                  </div>
-                  <div class="dislike col-md-3">
-                    <p>
-                      <span class="glyphicon glyphicon-thumbs-down"></span> No me gusta</p>
-                  </div>
-                </div>
-              </div>
-              <!-- fin mis ´publicaciones -->
-            </div>
-          </div>
+      <div class="col-md-4">
+        <div class="users-msj">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <span class="badge bajar">14</span>
+              <img src="assets/images/64x64.svg" alt=""> Nombre
+            </li>
+            <li class="list-group-item">
+              <span class="badge bajar">14</span>
+              <img src="assets/images/64x64.svg" alt=""> Nombre
+            </li>
+            <li class="list-group-item">
+              <span class="badge bajar">14</span>
+              <img src="assets/images/64x64.svg" alt=""> Nombre
+            </li>
+            <li class="list-group-item">
+              <span class="badge bajar">14</span>
+              <img src="assets/images/64x64.svg" alt=""> Nombre
+            </li>
+            <li class="list-group-item">
+              <span class="badge bajar">14</span>
+              <img src="assets/images/64x64.svg" alt=""> Nombre
+            </li>
+            <li class="list-group-item">
+              <span class="badge bajar">14</span>
+              <img src="assets/images/64x64.svg" alt=""> Nombre
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-3 pull-right aside">
-        <h3>Sugerencias</h3>
+      <div class="col-md-8 hist-msj">
+
+      </div>
+      <div class="env-mensaje col-md-12">
+
       </div>
     </div>
-  </div>  
-
+  </div>
+  
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
