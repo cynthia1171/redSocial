@@ -215,6 +215,11 @@
   overflow: auto;
 }
 
+.users-msj img{
+  width: 70px;
+  height: 70px;
+}
+
 .users-msj::-webkit-scrollbar{
   width: 1px;
 }
@@ -227,4 +232,18 @@
 .env-mensaje{
   outline: 1px solid #000;
   height: 20vh;
+}
+
+/*****************************************************************************************/
+
+/* estilos del footer */
+footer{
+	background: #f4f4f4;
+	height: 90px;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 40px;
+	margin-top: 30px;
+	border-top: 7px solid #000;
 }
