@@ -17,3 +17,48 @@ $('#modalMensaje').on('show.bs.modal', function (event) {
   modal.find('.modal-title').text('New message to ' + recipient)
   modal.find('.modal-body input').val(recipient)
 })
+
+
+/** funcion para mostrar los posteos en el muro */
+$('#postear').click(
+
+  function postear(){
+    var comentario = $('#txt-comentario').val();
+
+    $('#posteos-noticias').append('<div class="panel panel-default post">' +
+                                    '<div class= "panel-body" >' +
+                                      '<div class="row">' +
+                                      '<div class="col-sm-2">' +
+                                        '<a href="perfil.html" class="post-avatar thumbnail">' +
+                                          '<img src="assets/images/user.png" alt="">' +
+                                          '<div class="text-center">Nombre usuario</div>' +
+                                        '</a>' +
+                                        '<div class="likes text-center">' +
+                                          '<span class="glyphicon glyphicon-heart">7 Likes</span>' +
+                                        '</div>' +
+                                      '</div>' +
+                                      '<div class="col-sm-10">' +
+                                        '<div class="bubble">' +
+                                          '<div class="pointer">' +
+                                            '<p>' + comentario + '</p>' +
+                                          '</div>' +
+                                          '<div class="pointer-border"></div>' +
+                                        '</div>' +
+                                        '<p class="post-action">' +
+                                          '<a href="#">Like</a> - <a href="#">Compartir</a>' +
+                                        '</p>' +
+                                        '<div class="comment-form">' +
+                                          '<form class="form-inline">' +
+                                            '<div class="form-group">' +
+                                              '<input type="text" class="form-control" placeholder="Escribe tu comentario">' +
+                                            '</div>' +
+                                            '<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span></button>' +
+                                          '</form>' +
+                                        '</div>' +
+                                        '<div class="clearfix"></div>' +
+                                      '</div>' +
+                                    '</div>' +
+                                    '</div>' +
+                                  '</div>');
+  }
+);
