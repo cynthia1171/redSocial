@@ -21,6 +21,17 @@
     cursor: inherit;
     display: block;
 }
+
+.img-anadida{
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+
+
+
 /********************************************************************************************************/
 
 /* estilos página noticias.html */
