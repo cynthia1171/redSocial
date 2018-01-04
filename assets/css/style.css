@@ -10,17 +10,6 @@
 .fileupload-exists .fileupload-new,.fileupload-new .fileupload-exists{display:none;}
 .fileupload-inline .fileupload-controls{display:inline;}
 .fileupload-new .input-append .btn-file{-webkit-border-radius:0 3px 3px 0;-moz-border-radius:0 3px 3px 0;border-radius:0 3px 3px 0;}
-.thumbnail-borderless .thumbnail{border:none;padding:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
-.fileupload-new.thumbnail-borderless .thumbnail{border:1px solid #ddd;}
-.control-group.warning .fileupload .uneditable-input{color:#a47e3c;border-color:#a47e3c;}
-.control-group.warning .fileupload .fileupload-preview{color:#a47e3c;}
-.control-group.warning .fileupload .thumbnail{border-color:#a47e3c;}
-.control-group.error .fileupload .uneditable-input{color:#b94a48;border-color:#b94a48;}
-.control-group.error .fileupload .fileupload-preview{color:#b94a48;}
-.control-group.error .fileupload .thumbnail{border-color:#b94a48;}
-.control-group.success .fileupload .uneditable-input{color:#468847;border-color:#468847;}
-.control-group.success .fileupload .fileupload-preview{color:#468847;}
-.control-group.success .fileupload .thumbnail{border-color:#468847;}
 
 .btn-file{
   margin-left: 10%;
@@ -211,8 +200,9 @@
 }
 
 .users-msj{
-  height: 65vh;
+  height: 68vh;
   overflow: auto;
+	border: none;
 }
 
 .users-msj img{
@@ -225,13 +215,28 @@
 }
 
 .hist-msj{
-  outline: 1px solid #000;
-  height: 65vh;
+	border: 1px solid #ddd;
+  height: 47vh;
+	overflow: auto;
+}
+
+.hist-msj::-webkit-scrollbar{
+	width: 1px;
 }
 
 .env-mensaje{
-  outline: 1px solid #000;
+  border: 1px solid #ddd;
   height: 20vh;
+	margin-top: 10px;
+}
+
+.env-mensaje #txt-msj{
+	height: 60px;
+	width: 100vh;
+}
+
+.env-mensaje button{
+	margin-top: -46px;
 }
 
 /*****************************************************************************************/
