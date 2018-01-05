@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Perfil de Usuario</title>
+  <title>Grupo</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
@@ -48,11 +48,11 @@
             <li role="presentation">
               <a href="miembros.html">Miembros</a>
             </li>
-            <li role="presentation">
+            <li role="presentation" class="active">
               <a href="grupos.html">Grupos</a>
             </li>
-            <li class="dropdown active">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nombre
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hola Cynthia
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
@@ -73,7 +73,7 @@
                 </li>
                 <li role="separator" class="divider"></li>
                 <li>
-                  <a href="#">Cerrar sesión</a>
+                  <a id="cerrar-sesion" href="#">Cerrar sesión</a>
                 </li>
               </ul>
             </li>
@@ -83,8 +83,6 @@
       <!-- /.container-fluid -->
     </nav>
   </header>
-  <!-- fin del header -->
-
 
   <!-- inicio de la seccion con contenido -->
   <section class="orden">
@@ -93,27 +91,20 @@
         <div class="col-md-8">
           <div class="myPost">
             <div class="row">
-              <div class="portada">
+              <div class="portada-grupo">
                 <div class="img-portada">
                   <div class="col-md-4">
-                    <img src="assets/images/user.png" alt="" class="img-responsive">
+                    <img src="assets/images/grupo.png" alt="" class="img-responsive">
                   </div>
                   <div class="col-md-8">
-                    <h2>Cynthia</h2>
+                    <h2>Nombre grupo</h2>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="info">
-                <div class="col-md-5">
-                  <div class="intereses">
-                    <h3>Intereses</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur totam et autem omnis tempore quae quia odio,
-                      neque id, optio unde illum nemo, temporibus a vel aspernatur expedita ullam soluta.</p>
-                  </div>
-                </div>
-                <div class="col-md-7">
+                <div class="col-md-12">
                   <div class="row">
                     <div class="follow">
                       <div class="col-md-4">
@@ -125,7 +116,8 @@
                         <p>PUBLICACIONES</p>
                       </div>
                       <div class="col-md-4">
-                        <p><span class="glyphicon glyphicon-heart"></span> Seguir</p>    
+                        <p class="btn btn-default btn-block">
+                          <span class="glyphicon glyphicon-heart"></span> Seguir</p>
                       </div>
                     </div>
                   </div>
@@ -167,9 +159,9 @@
                       <div class="col-sm-10">
                         <div class="bubble">
                           <div class="pointer">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum unde, doloribus temporibus recusandae ratione,
-                              maxime aliquam, aliquid facilis atque aut praesentium ducimus perferendis ipsam voluptatibus optio libero.
-                              Cum, tempora recusandae?</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum unde, doloribus temporibus recusandae
+                              ratione, maxime aliquam, aliquid facilis atque aut praesentium ducimus perferendis ipsam voluptatibus
+                              optio libero. Cum, tempora recusandae?</p>
                           </div>
                           <div class="pointer-border"></div>
                         </div>
@@ -188,15 +180,16 @@
                           </form>
                         </div>
                         <div class="clearfix"></div>
-                
+  
                         <div class="comments">
                           <div class="comment">
                             <a href="#" class="comment-avatar pull-left">
                               <img src="assets/images/user.png" alt="">
                             </a>
                             <div class="comment-text">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque libero recusandae voluptate ab facere
-                                repellat sed cum nostrum architecto a in, eum laboriosam officiis assumenda fuga? Itaque, atque consequatur?</p>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque libero recusandae voluptate
+                                ab facere repellat sed cum nostrum architecto a in, eum laboriosam officiis assumenda fuga?
+                                Itaque, atque consequatur?</p>
                             </div>
                           </div>
                           <div class="comment">
@@ -204,8 +197,9 @@
                               <img src="assets/images/user.png" alt="">
                             </a>
                             <div class="comment-text">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque libero recusandae voluptate ab facere
-                                repellat sed cum nostrum architecto a in, eum laboriosam officiis assumenda fuga? Itaque, atque consequatur?</p>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque libero recusandae voluptate
+                                ab facere repellat sed cum nostrum architecto a in, eum laboriosam officiis assumenda fuga?
+                                Itaque, atque consequatur?</p>
                             </div>
                           </div>
                           <div class="clearfix"></div>
@@ -313,13 +307,6 @@
     </div>
   </section>
   <!-- fin seccion de contenido -->
-
-  <!-- inicio del footer -->
-  <footer>
-    <div class="container">
-      <p>Laboratoria Copyright &copy 2018</p>
-    </div>
-  </footer>
 
 
   <!-- Latest compiled and minified JavaScript -->

@@ -4,6 +4,10 @@
 	overflow: hidden;
 }
 
+section{
+	color: ;
+}
+
 
 /**********************************************************************************************/
 /* estilo index.html */
@@ -131,6 +135,10 @@
 	margin:5px;
 }
 
+.txt-grupo{
+	color: #fff;
+}
+
 .comment-form .form-group{
 	width: 90%;
 }
@@ -185,11 +193,17 @@
 }
 
 .portada{
-  outline: 1px solid #000;
   height: 40vh;
   background-image: url(../images/fondo.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+}
+.portada-grupo{
+	width: 100%;
+  height: 40vh;
+  background-image: url(../images/fondo-noticias.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .img-portada{
@@ -210,11 +224,16 @@
   font-weight: bold;
 }
 
+.intereses{
+	color: #fff;
+}
+
 .follow{
   /*outline: 1px solid #000;*/
   height: 10vh;
   margin-top: 11vh;
   text-align: center;
+	color: #fff;
 }
 
 .myPost{

@@ -5,11 +5,14 @@ var contComment = 0;
 /** contador de likes */
 var contLike = 0;
 
+
+/** funcion registrar */
 function registrar(){
   window.location = 'noticias.html';
   return false;
 }
 
+/** funcion iniciar sesion */
 function iniciar() {
   window.location = 'noticias.html';
   return false;
@@ -181,6 +184,5 @@ function agregarComentario() {
   );
   contComment++;
 }
-
 
 
