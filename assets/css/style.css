@@ -66,8 +66,23 @@
 /********************************************************************************************************/
 
 /* estilos página noticias.html */
+#fondo{
+  background-color: #000;
+  background-image: url(../images/fondo-noticias.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .orden{
   margin-top: 12vh;
+}
+
+.columna1{
+	overflow: hidden;
+}
+
+.columna1::-webkit-scrollbar{
+	width: 1px;
 }
 
 .panel-heading{

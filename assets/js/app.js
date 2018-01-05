@@ -5,6 +5,21 @@ var contComment = 0;
 /** contador de likes */
 var contLike = 0;
 
+function registrar(){
+  window.location = 'noticias.html';
+  return false;
+}
+
+function iniciar() {
+  window.location = 'noticias.html';
+  return false;
+}
+
+$('#cerrar-sesion').click(function(){
+  alert("Su sesion ha sido cerrada");
+  window.location = 'index.html';
+  return false;
+})
 
 $(document).ready(function () {
 
